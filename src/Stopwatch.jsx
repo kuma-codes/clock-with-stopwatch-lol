@@ -70,16 +70,18 @@ function Stopwatch(){
 
     
     return(
-        <div className='bg-transparent rounded-[10%] w-[50%] h-[50%] py-[10px] align-center justify-center text-center'>
-            <div className="text-white text-7xl drop-shadow-[3px_3px_5px_rgba(0,0,0,0.75)]">{formatTime()}</div>
-            <div className="controls">
-                <button className='cursor-pointer font-bold rounded-lg p-[10px] m-[10px] text-lg w-auto h-auto bg-[#2b3647] hover:bg-[#1f2937] text-white transition-colors duration-200 justify-center' onClick={start}>
+        <div className='w-full max-w-4xl rounded-[30px] bg-slate-900/75 p-4 sm:p-6 text-center shadow-xl shadow-black/40'>
+            <div className="text-white text-[3.25rem] sm:text-[4.25rem] md:text-[5.5rem] leading-tight drop-shadow-[3px_3px_5px_rgba(0,0,0,0.75)]">
+                {formatTime()}
+            </div>
+            <div className="controls mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
+                <button className='w-full sm:w-auto px-5 py-3 text-base sm:text-lg font-bold rounded-2xl bg-[#2b3647] hover:bg-[#1f2937] text-white transition-colors duration-200' onClick={start}>
                     Start
                 </button>
-                <button className='cursor-pointer font-bold rounded-lg p-[10px] m-[10px] text-lg w-auto h-auto bg-[#2b3647] hover:bg-[#1f2937] text-white transition-colors duration-200 justify-center' onClick={stop}>
+                <button className='w-full sm:w-auto px-5 py-3 text-base sm:text-lg font-bold rounded-2xl bg-[#2b3647] hover:bg-[#1f2937] text-white transition-colors duration-200' onClick={stop}>
                     Stop
                 </button>
-                <button className='cursor-pointer font-bold rounded-lg p-[10px] m-[10px] text-lg w-auto h-auto bg-[#2b3647] hover:bg-[#1f2937] text-white transition-colors duration-200 justify-center' onClick={reset}>
+                <button className='w-full sm:w-auto px-5 py-3 text-base sm:text-lg font-bold rounded-2xl bg-[#2b3647] hover:bg-[#1f2937] text-white transition-colors duration-200' onClick={reset}>
                     Reset
                 </button>
             </div>

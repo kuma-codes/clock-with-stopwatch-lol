@@ -31,8 +31,8 @@ function DigitalClock(){
     }
 
     return(
-        <div className="w-screen max-w-[50%] py-[10px] ">
-            <div className="text-white text-[6rem] font-bold font-mono text-center drop-shadow-[3px_3px_5px_rgba(0,0,0,0.75)]">
+        <div className="w-full max-w-4xl px-4">
+            <div className="text-white text-[3.25rem] sm:text-[4.5rem] md:text-[6rem] font-bold font-mono text-center drop-shadow-[3px_3px_5px_rgba(0,0,0,0.75)]">
                 <span>
                     {formatTime()}
                 </span>
